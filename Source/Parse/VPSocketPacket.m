@@ -10,7 +10,7 @@
 #import "DefaultSocketLogger.h"
 @interface VPSocketPacket()
 {
-    int placeholders;
+    NSInteger placeholders;
     NSDictionary*packetStrings;
 }
 
@@ -38,7 +38,7 @@
 
 -(NSString *)description
 {
-    return [NSString stringWithFormat:@"SocketPacket {type:%@; data: %@; id: %d; placeholders: %d; nsp: %@}", packetStrings[@(_type)], _data, _id, placeholders, _nsp];
+    return [NSString stringWithFormat:@"SocketPacket {type:%@; data: %@; id: %ld; placeholders: %ld; nsp: %@}", packetStrings[@(_type)], _data, (long)_id, (long)placeholders, _nsp];
 }
 
 
@@ -65,20 +65,23 @@
 
 -(instancetype)init:(VPPacketType)type
                nsp:(NSString*)namespace
-       placeholders:(int)_placeholders
+       placeholders:(NSInteger)_placeholders
 {
     self = [super init];
     if(self) {
         _type = type;
+        _data = @[].mutableCopy;
+        _id = -1;
         _nsp = namespace;
         placeholders = _placeholders;
+        _binary = @[].mutableCopy;
          [self setupData];
     }
     return self;
 }
 
 -(instancetype)init:(VPPacketType)type data:(NSArray*)data
-                 id:(int)id nsp:(NSString*)nsp placeholders:(int)_placeholders
+                 id:(NSInteger)id nsp:(NSString*)nsp placeholders:(NSInteger)_placeholders
              binary:(NSArray*)binary
 {
     self = [super init];
@@ -88,7 +91,7 @@
         _id = id;
         _nsp = nsp;
         placeholders = _placeholders;
-        _binary = [binary copy];
+        _binary = [binary mutableCopy];
         [self setupData];
     }
     return self;
@@ -157,10 +160,10 @@
     }
     NSString *binaryCountString =  [typeString stringByAppendingString:bString];
 
-    NSString *nsAddpString = [_nsp isEqualToString:@"/"]? @"": _nsp;
+    NSString *nsAddpString = [_nsp isEqualToString:@"/"]? @"": [NSString stringWithFormat:@"%@,",_nsp];
     NSString *nspString = [binaryCountString stringByAppendingString:nsAddpString];
     
-    NSString *idString = [nspString stringByAppendingString:(self.id != -1 ? [NSString stringWithFormat:@"%d", self.id] : @"")];
+    NSString *idString = [nspString stringByAppendingString:(self.id != -1 ? [NSString stringWithFormat:@"%ld", (long)self.id] : @"")];
     return [self completeMessage:idString];
 }
 
@@ -208,12 +211,17 @@
 }
 
 
-+(VPSocketPacket*)packetFromEmit:(NSArray*)items id:(int)id nsp:(NSString*)nsp ack:(BOOL)ack {
-    
-    NSMutableArray *binary = [NSMutableArray array];
-    NSArray *parsedData = [[self class] parseItems:items toBinary:binary];
-    VPPacketType type = [[self class] findType:binary.count ack: ack];
-    return [[VPSocketPacket alloc] init:type data:parsedData id:id nsp:nsp placeholders:0 binary:binary];
+
++(VPSocketPacket*)packetFromEmit:(NSArray*)items id:(NSInteger)id nsp:(NSString*)nsp ack:(BOOL)ack checkForBinary:(BOOL)checkForBinary{
+    if(checkForBinary){
+        NSMutableArray *binary = [NSMutableArray array];
+        NSArray *parsedData = [[self class] parseItems:items toBinary:binary];
+        VPPacketType type = [[self class] findType:binary.count ack: ack];
+        return [[VPSocketPacket alloc] init:type data:parsedData id:id nsp:nsp placeholders:0 binary:binary];
+    }else{
+        VPPacketType type = [[self class]findType:0 ack:ack];
+        return [[VPSocketPacket alloc] init:type data:items id:id nsp:nsp placeholders:0 binary:@[].mutableCopy];
+    }
 }
 
 +(VPPacketType) findType:(NSInteger)binCount ack:(BOOL)ack

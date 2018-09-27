@@ -8,24 +8,28 @@
 
 #import "VPSocketOnAckCallback.h"
 #import "VPSocketAckManager.h"
+#import "VPSocketIOClient.h"
+#import "VPSocketManager.h"
 
 @interface VPSocketOnAckCallback()
 
-@property (nonatomic, weak) id<VPSocketIOClientProtocol> socket;
+@property (nonatomic, weak) VPSocketIOClient *socket;
 @property (nonatomic, strong) NSArray* items;
 @property (nonatomic) int ackNum;
+@property (nonatomic) BOOL binary;
 
 @end
 
 @implementation VPSocketOnAckCallback
 
--(instancetype)initAck:(int)ack items:(NSArray*)items socket:(id<VPSocketIOClientProtocol>)socket
+-(instancetype)initAck:(int)ack items:(NSArray*)items socket:(id<VPSocketIOClientProtocol>)socket binary:(BOOL)binary
 {
     self = [super init];
     if(self) {
-        self.socket = socket;
+        _socket = socket;
         self.ackNum = ack;
         self.items = items;
+        self.binary = binary;
     }
     return self;
 }
@@ -36,18 +40,17 @@
     if (self.socket != nil && _ackNum != -1) {
         
         [self.socket.ackHandlers addAck:_ackNum callback:callback];
-        [self.socket emitAck:_ackNum withItems:_items];
+        [self.socket emit:_items ack:_ackNum binary:self.binary isAck:NO];
         if(seconds >0 ) {
             
             __weak typeof(self) weakSelf = self;
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), self.socket.handleQueue, ^
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), self.socket.manager.handleQueue, ^
             {
                 @autoreleasepool
                 {
                     __strong typeof(self) strongSelf = weakSelf;
                     if(strongSelf) {
-                        [strongSelf.socket.ackHandlers timeoutAck:strongSelf.ackNum
-                                                          onQueue:strongSelf.socket.handleQueue];
+                        [strongSelf.socket.ackHandlers timeoutAck:strongSelf.ackNum];
                     }
                 }
             });

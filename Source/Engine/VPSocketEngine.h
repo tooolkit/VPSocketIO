@@ -1,9 +1,9 @@
 //
-//  SocketEngine.h
-//  VPSocketIO
+//  VPSocketEngine.h
+//  IFMSocketIO
 //
-//  Created by Vasily Popov on 9/19/17.
-//  Copyright © 2017 Vasily Popov. All rights reserved.
+//  Created by yangguang on 2018/7/23.
+//  Copyright © 2018年 bngj. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,7 +11,6 @@
 
 @interface VPSocketEngine : NSObject<VPSocketEngineProtocol>
 
-/// Creates a new engine.
 -(instancetype)initWithClient:(id<VPSocketEngineClient>)client url:(NSURL*)url options:(NSDictionary*)options;
 
 @end

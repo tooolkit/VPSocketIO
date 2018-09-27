@@ -1,9 +1,9 @@
 //
 //  VPSocketAnyEvent.h
-//  VPSocketIO
+//  IFMSocketIO
 //
-//  Created by Vasily Popov on 9/19/17.
-//  Copyright © 2017 Vasily Popov. All rights reserved.
+//  Created by yangguang on 2018/7/24.
+//  Copyright © 2018年 bngj. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -18,14 +18,11 @@
 
 @end
 
-
 @interface VPSocketEventHandler : NSObject
 
-@property (nonatomic, strong, readonly) NSString* event;
+@property (nonatomic, strong, readonly) NSString *event;
 @property (nonatomic, strong, readonly) NSUUID *uuid;
 @property (nonatomic, strong, readonly) VPSocketOnEventCallback callback;
-
 -(instancetype)initWithEvent:(NSString*)event uuid:(NSUUID*)uuid andCallback:(VPSocketOnEventCallback)callback;
-
 -(void)executeCallbackWith:(NSArray*)items withAck:(int)ack withSocket:(id<VPSocketIOClientProtocol>)socket;
 @end

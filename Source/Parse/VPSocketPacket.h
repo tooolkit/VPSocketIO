@@ -24,7 +24,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong, readonly) NSString *packetString;
 @property (nonatomic, strong, readonly) NSMutableArray<NSData*> *binary;
 @property (nonatomic, readonly) VPPacketType type;
-@property (nonatomic, readonly) int id;
+@property (nonatomic, readonly) NSInteger id;
 @property (nonatomic, strong, readonly) NSString *event;
 @property (nonatomic, strong, readonly) NSArray *args;
 @property (nonatomic, strong, readonly) NSString *nsp;
@@ -32,15 +32,17 @@ typedef enum : NSUInteger {
 
 -(instancetype)init:(VPPacketType)type
                 nsp:(NSString*)namespace
-       placeholders:(int)plholders;
+       placeholders:(NSInteger)plholders;
+
 -(instancetype)init:(VPPacketType)type
                data:(NSArray*)data
-                 id:(int)id
+                 id:(NSInteger)id
                 nsp:(NSString*)nsp
-       placeholders:(int)plholders
+       placeholders:(NSInteger)plholders
              binary:(NSArray*)binary;
 
-+(VPSocketPacket*)packetFromEmit:(NSArray*)items id:(int)id nsp:(NSString*)nsp ack:(BOOL)ack;
+//checkForBinary defaults true
++(VPSocketPacket*)packetFromEmit:(NSArray*)items id:(NSInteger)id nsp:(NSString*)nsp ack:(BOOL)ack checkForBinary:(BOOL)checkForBinary;
 
 -(BOOL)addData:(NSData*)data;
 

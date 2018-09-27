@@ -11,7 +11,8 @@
 
 @interface VPSocketOnAckCallback : NSObject
 
--(instancetype)initAck:(int)ack items:(NSArray*)items socket:(id<VPSocketIOClientProtocol>)socket;
+//binary default YES
+-(instancetype)initAck:(int)ack items:(NSArray*)items socket:(id<VPSocketIOClientProtocol>)socket binary:(BOOL)binary;
 -(void)timingOutAfter:(double)seconds callback:(VPScoketAckArrayCallback)callback;
 
 @end

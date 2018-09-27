@@ -33,9 +33,9 @@
 @end
 
 
-@interface ViewController () {
-    VPSocketIOClient *socket;
-}
+@interface ViewController ()
+@property (nonatomic, strong) VPSocketManager *manager;
+@property (nonatomic, strong) VPSocketIOClient *socket;
 @end
 
 @implementation ViewController
@@ -57,9 +57,11 @@
 }
 - (IBAction)disconnect:(id)sender {
     
-    [socket removeAllHandlers];
-    [socket disconnect];
-    self->socket = nil;
+//    [socket removeAllHandlers];
+//    [socket disconnect];
+//    self->socket = nil;
+//    [self.socket disconnect];
+    [self.manager disconnectSocket:self.socket];
     
 }
 
@@ -67,34 +69,24 @@
 {
     ClientSocketLogger*logger = [ClientSocketLogger new];
 
-    NSString *urlString = @"http://localhost:8900";
-    NSDictionary *connectParams = @{@"key":@"value"};
-    self->socket = [[VPSocketIOClient alloc] init:[NSURL URLWithString:urlString]
-                                 withConfig:@{@"log": @YES,
-                                              @"forcePolling": @NO,
-                                              @"secure": @YES,
-                                              @"forceNew":@YES,
-                                              @"forceWebsockets":@YES,
-                                              @"selfSigned":@YES,
-                                              @"reconnectWait":@1000,
-                                              @"nsp":@"/rooms",
-                                              @"connectParams":connectParams,
-                                              @"logger":logger
-                                              }];
-    
-    
-    [socket on:kSocketEventConnect callback:^(NSArray *array, VPSocketAckEmitter *emitter) {
-        NSLog(@"!!!!socket connected");
+    NSString *urlString = @"http://localhost:8080";
+    NSURL *url = [[NSURL alloc]initWithString:urlString];
+    self.manager = [[VPSocketManager alloc]initWithURL:url config:@{@"log":@(NO)}];
+//    self.socket = [self.manager defaultSocket];
+    self.socket = [self.manager socketFor:@"/web"];
+    [self.socket on:@"connect" callback:^(NSArray *array, VPSocketAckEmitter *emitter) {
+        NSLog(@"%@",array);
     }];
+    [self.socket connect];
     
-    [socket on:@"startGame" callback:^(NSArray *data, VPSocketAckEmitter *emitter) {
-        if(data.count > 0)
-        {
-        }
+    
+    
+    
+}
+- (IBAction)emit:(id)sender {
+    [[self.socket emitWithAck:@"event" items:@[@{}]] timingOutAfter:0 callback:^(NSArray *array) {
+        NSLog(@"%@",array);
     }];
-    
-    [socket connect];
-    
 }
 
 

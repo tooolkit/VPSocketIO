@@ -7,22 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AD2FFA3215C73B000D1B4C6 /* VPSocketOnAckCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF7C215C73B000D1B4C6 /* VPSocketOnAckCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFA4215C73B000D1B4C6 /* VPSocketAck.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF7D215C73B000D1B4C6 /* VPSocketAck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFA5215C73B000D1B4C6 /* VPSocketAckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF7E215C73B000D1B4C6 /* VPSocketAckManager.m */; };
+		2AD2FFA6215C73B000D1B4C6 /* VPSocketAckEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF7F215C73B000D1B4C6 /* VPSocketAckEmitter.m */; };
+		2AD2FFA7215C73B000D1B4C6 /* VPSocketAck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF80215C73B000D1B4C6 /* VPSocketAck.m */; };
+		2AD2FFA8215C73B000D1B4C6 /* VPSocketOnAckCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF81215C73B000D1B4C6 /* VPSocketOnAckCallback.m */; };
+		2AD2FFA9215C73B000D1B4C6 /* VPSocketAckManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF82215C73B000D1B4C6 /* VPSocketAckManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFAA215C73B000D1B4C6 /* VPSocketAckEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF83215C73B000D1B4C6 /* VPSocketAckEmitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFAB215C73B000D1B4C6 /* NSString+VPSocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF85215C73B000D1B4C6 /* NSString+VPSocketIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFAC215C73B000D1B4C6 /* VPSocketLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF86215C73B000D1B4C6 /* VPSocketLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFAD215C73B000D1B4C6 /* DefaultSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF87215C73B000D1B4C6 /* DefaultSocketLogger.m */; };
+		2AD2FFAE215C73B000D1B4C6 /* VPStringReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF88215C73B000D1B4C6 /* VPStringReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFAF215C73B000D1B4C6 /* VPSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF89215C73B000D1B4C6 /* VPSocketLogger.m */; };
+		2AD2FFB0215C73B000D1B4C6 /* NSString+VPSocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF8A215C73B000D1B4C6 /* NSString+VPSocketIO.m */; };
+		2AD2FFB1215C73B000D1B4C6 /* VPStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF8B215C73B000D1B4C6 /* VPStringReader.m */; };
+		2AD2FFB2215C73B000D1B4C6 /* DefaultSocketLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF8C215C73B000D1B4C6 /* DefaultSocketLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFB3215C73B000D1B4C6 /* VPSocketPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF8E215C73B000D1B4C6 /* VPSocketPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFB4215C73B000D1B4C6 /* VPSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF8F215C73B000D1B4C6 /* VPSocketPacket.m */; };
+		2AD2FFB5215C73B000D1B4C6 /* VPSocketIOClientProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF91215C73B000D1B4C6 /* VPSocketIOClientProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFB6215C73B000D1B4C6 /* VPSocketIOClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF92215C73B000D1B4C6 /* VPSocketIOClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFB7215C73B000D1B4C6 /* VPSocketAnyEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF93215C73B000D1B4C6 /* VPSocketAnyEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFB8215C73B000D1B4C6 /* VPSocketIOClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF94215C73B000D1B4C6 /* VPSocketIOClient.m */; };
+		2AD2FFB9215C73B000D1B4C6 /* VPSocketAnyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF95215C73B000D1B4C6 /* VPSocketAnyEvent.m */; };
+		2AD2FFBA215C73B000D1B4C6 /* VPSocketManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF97215C73B000D1B4C6 /* VPSocketManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFBB215C73B000D1B4C6 /* VPSocketManagerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF98215C73B000D1B4C6 /* VPSocketManagerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFBC215C73B000D1B4C6 /* VPSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF99215C73B000D1B4C6 /* VPSocketManager.m */; };
+		2AD2FFBD215C73B100D1B4C6 /* VPSocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF9B215C73B000D1B4C6 /* VPSocketEngine.m */; };
+		2AD2FFBE215C73B100D1B4C6 /* VPSocketEngineProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF9C215C73B000D1B4C6 /* VPSocketEngineProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFBF215C73B100D1B4C6 /* VPSocketEngine+EnginePollable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF9D215C73B000D1B4C6 /* VPSocketEngine+EnginePollable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFC0215C73B100D1B4C6 /* VPSocketEngine+EngineWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FF9E215C73B000D1B4C6 /* VPSocketEngine+EngineWebsocket.m */; };
+		2AD2FFC1215C73B100D1B4C6 /* VPSocketEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FF9F215C73B000D1B4C6 /* VPSocketEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFC2215C73B100D1B4C6 /* VPSocketEngine+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FFA0215C73B000D1B4C6 /* VPSocketEngine+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD2FFC3215C73B100D1B4C6 /* VPSocketEngine+EnginePollable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2FFA1215C73B000D1B4C6 /* VPSocketEngine+EnginePollable.m */; };
+		2AD2FFC4215C73B100D1B4C6 /* VPSocketEngine+EngineWebsocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2FFA2215C73B000D1B4C6 /* VPSocketEngine+EngineWebsocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F010115A1F7BCCCC00699669 /* JFRSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = F01011541F7BCC2700699669 /* JFRSecurity.m */; };
 		F010115B1F7BCCCC00699669 /* JFRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F01011561F7BCC2700699669 /* JFRWebSocket.m */; };
 		F010115C1F7BCCD700699669 /* JFRSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = F01011551F7BCC2700699669 /* JFRSecurity.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F010115D1F7BCCD700699669 /* JFRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F01011571F7BCC2700699669 /* JFRWebSocket.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F010115E1F7BCCE000699669 /* VPSocketPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = F07857C91F71BA1600B97C77 /* VPSocketPacket.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F010115F1F7BCCE000699669 /* VPSocketEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = F07857BC1F71B05000B97C77 /* VPSocketEngine.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011601F7BCCE000699669 /* VPSocketEngineProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F07857BF1F71B07900B97C77 /* VPSocketEngineProtocol.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011611F7BCCE000699669 /* VPSocketEngine+EnginePollable.h in Headers */ = {isa = PBXBuildFile; fileRef = F03E86261F7AA29000EF12B7 /* VPSocketEngine+EnginePollable.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011621F7BCCE000699669 /* VPSocketEngine+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F03E86291F7AA2F100EF12B7 /* VPSocketEngine+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011631F7BCCE000699669 /* VPSocketEngine+EngineWebsocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F08E4F5F1F7AAB370032C8E3 /* VPSocketEngine+EngineWebsocket.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011641F7BCCED00699669 /* VPSocketAckEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = F07857B81F71AA1C00B97C77 /* VPSocketAckEmitter.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011651F7BCCED00699669 /* VPSocketAckManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F07857CC1F71D06F00B97C77 /* VPSocketAckManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011661F7BCCED00699669 /* VPSocketAck.h in Headers */ = {isa = PBXBuildFile; fileRef = F08E4F651F7AB3850032C8E3 /* VPSocketAck.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011671F7BCCFA00699669 /* NSString+VPSocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = F035C7541F75C71B00174C98 /* NSString+VPSocketIO.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011681F7BCCFA00699669 /* VPStringReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F035C7581F76635000174C98 /* VPStringReader.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F01011691F7BCCFA00699669 /* DefaultSocketLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F035C75C1F76898400174C98 /* DefaultSocketLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F06B19321F71466D003E81B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B19311F71466D003E81B1 /* main.m */; };
 		F06B19351F71466D003E81B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B19341F71466D003E81B1 /* AppDelegate.m */; };
 		F06B19381F71466D003E81B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B19371F71466D003E81B1 /* ViewController.m */; };
@@ -32,25 +54,6 @@
 		F08E4F721F7ACFEB0032C8E3 /* VPSocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = F08E4F701F7ACFEB0032C8E3 /* VPSocketIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F08E4F751F7ACFEB0032C8E3 /* VPSocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08E4F6E1F7ACFEB0032C8E3 /* VPSocketIO.framework */; };
 		F08E4F761F7ACFEB0032C8E3 /* VPSocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F08E4F6E1F7ACFEB0032C8E3 /* VPSocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F08E4F7E1F7AD2480032C8E3 /* VPSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = F07857CA1F71BA1600B97C77 /* VPSocketPacket.m */; };
-		F08E4F7F1F7AD2480032C8E3 /* VPSocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F07857BD1F71B05000B97C77 /* VPSocketEngine.m */; };
-		F08E4F801F7AD2480032C8E3 /* VPSocketEngine+EnginePollable.m in Sources */ = {isa = PBXBuildFile; fileRef = F03E86271F7AA29000EF12B7 /* VPSocketEngine+EnginePollable.m */; };
-		F08E4F811F7AD2480032C8E3 /* VPSocketEngine+EngineWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F08E4F601F7AAB370032C8E3 /* VPSocketEngine+EngineWebsocket.m */; };
-		F08E4F821F7AD2480032C8E3 /* VPSocketAckEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = F07857B91F71AA1C00B97C77 /* VPSocketAckEmitter.m */; };
-		F08E4F831F7AD2480032C8E3 /* VPSocketAckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F07857CD1F71D06F00B97C77 /* VPSocketAckManager.m */; };
-		F08E4F841F7AD24E0032C8E3 /* VPSocketAck.m in Sources */ = {isa = PBXBuildFile; fileRef = F08E4F661F7AB3850032C8E3 /* VPSocketAck.m */; };
-		F08E4F851F7AD2570032C8E3 /* VPSocketOnAckCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = F08E4F631F7AB21E0032C8E3 /* VPSocketOnAckCallback.m */; };
-		F08E4F861F7AD2630032C8E3 /* NSString+VPSocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = F035C7551F75C71B00174C98 /* NSString+VPSocketIO.m */; };
-		F08E4F871F7AD2630032C8E3 /* VPStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F035C7591F76635000174C98 /* VPStringReader.m */; };
-		F08E4F881F7AD2630032C8E3 /* DefaultSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F035C75D1F76898400174C98 /* DefaultSocketLogger.m */; };
-		F08E4F891F7AD2630032C8E3 /* VPSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F08E4F7C1F7AD1030032C8E3 /* VPSocketLogger.m */; };
-		F08E4F8A1F7AD2630032C8E3 /* VPSocketIOClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F05AF09D1F717B1000DC58C7 /* VPSocketIOClient.m */; };
-		F08E4F8B1F7AD2630032C8E3 /* VPSocketAnyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F07857B01F7198BD00B97C77 /* VPSocketAnyEvent.m */; };
-		F08E4F8D1F7AD60F0032C8E3 /* VPSocketLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F08E4F7B1F7AD1030032C8E3 /* VPSocketLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F08E4F8E1F7AD60F0032C8E3 /* VPSocketIOClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F05AF09C1F717B1000DC58C7 /* VPSocketIOClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F08E4F8F1F7AD60F0032C8E3 /* VPSocketAnyEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = F07857AF1F7198BD00B97C77 /* VPSocketAnyEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F08E4F901F7AD60F0032C8E3 /* VPSocketIOClientProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F07857C61F71B85500B97C77 /* VPSocketIOClientProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F08E4F911F7AD67E0032C8E3 /* VPSocketOnAckCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = F08E4F621F7AB21E0032C8E3 /* VPSocketOnAckCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,21 +81,44 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AD2FF7C215C73B000D1B4C6 /* VPSocketOnAckCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketOnAckCallback.h; sourceTree = "<group>"; };
+		2AD2FF7D215C73B000D1B4C6 /* VPSocketAck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketAck.h; sourceTree = "<group>"; };
+		2AD2FF7E215C73B000D1B4C6 /* VPSocketAckManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketAckManager.m; sourceTree = "<group>"; };
+		2AD2FF7F215C73B000D1B4C6 /* VPSocketAckEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketAckEmitter.m; sourceTree = "<group>"; };
+		2AD2FF80215C73B000D1B4C6 /* VPSocketAck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketAck.m; sourceTree = "<group>"; };
+		2AD2FF81215C73B000D1B4C6 /* VPSocketOnAckCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketOnAckCallback.m; sourceTree = "<group>"; };
+		2AD2FF82215C73B000D1B4C6 /* VPSocketAckManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketAckManager.h; sourceTree = "<group>"; };
+		2AD2FF83215C73B000D1B4C6 /* VPSocketAckEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketAckEmitter.h; sourceTree = "<group>"; };
+		2AD2FF85215C73B000D1B4C6 /* NSString+VPSocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VPSocketIO.h"; sourceTree = "<group>"; };
+		2AD2FF86215C73B000D1B4C6 /* VPSocketLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketLogger.h; sourceTree = "<group>"; };
+		2AD2FF87215C73B000D1B4C6 /* DefaultSocketLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSocketLogger.m; sourceTree = "<group>"; };
+		2AD2FF88215C73B000D1B4C6 /* VPStringReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPStringReader.h; sourceTree = "<group>"; };
+		2AD2FF89215C73B000D1B4C6 /* VPSocketLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketLogger.m; sourceTree = "<group>"; };
+		2AD2FF8A215C73B000D1B4C6 /* NSString+VPSocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VPSocketIO.m"; sourceTree = "<group>"; };
+		2AD2FF8B215C73B000D1B4C6 /* VPStringReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPStringReader.m; sourceTree = "<group>"; };
+		2AD2FF8C215C73B000D1B4C6 /* DefaultSocketLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSocketLogger.h; sourceTree = "<group>"; };
+		2AD2FF8E215C73B000D1B4C6 /* VPSocketPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketPacket.h; sourceTree = "<group>"; };
+		2AD2FF8F215C73B000D1B4C6 /* VPSocketPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketPacket.m; sourceTree = "<group>"; };
+		2AD2FF91215C73B000D1B4C6 /* VPSocketIOClientProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketIOClientProtocol.h; sourceTree = "<group>"; };
+		2AD2FF92215C73B000D1B4C6 /* VPSocketIOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketIOClient.h; sourceTree = "<group>"; };
+		2AD2FF93215C73B000D1B4C6 /* VPSocketAnyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketAnyEvent.h; sourceTree = "<group>"; };
+		2AD2FF94215C73B000D1B4C6 /* VPSocketIOClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketIOClient.m; sourceTree = "<group>"; };
+		2AD2FF95215C73B000D1B4C6 /* VPSocketAnyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketAnyEvent.m; sourceTree = "<group>"; };
+		2AD2FF97215C73B000D1B4C6 /* VPSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketManager.h; sourceTree = "<group>"; };
+		2AD2FF98215C73B000D1B4C6 /* VPSocketManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketManagerProtocol.h; sourceTree = "<group>"; };
+		2AD2FF99215C73B000D1B4C6 /* VPSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketManager.m; sourceTree = "<group>"; };
+		2AD2FF9B215C73B000D1B4C6 /* VPSocketEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSocketEngine.m; sourceTree = "<group>"; };
+		2AD2FF9C215C73B000D1B4C6 /* VPSocketEngineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketEngineProtocol.h; sourceTree = "<group>"; };
+		2AD2FF9D215C73B000D1B4C6 /* VPSocketEngine+EnginePollable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VPSocketEngine+EnginePollable.h"; sourceTree = "<group>"; };
+		2AD2FF9E215C73B000D1B4C6 /* VPSocketEngine+EngineWebsocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VPSocketEngine+EngineWebsocket.m"; sourceTree = "<group>"; };
+		2AD2FF9F215C73B000D1B4C6 /* VPSocketEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSocketEngine.h; sourceTree = "<group>"; };
+		2AD2FFA0215C73B000D1B4C6 /* VPSocketEngine+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VPSocketEngine+Private.h"; sourceTree = "<group>"; };
+		2AD2FFA1215C73B000D1B4C6 /* VPSocketEngine+EnginePollable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VPSocketEngine+EnginePollable.m"; sourceTree = "<group>"; };
+		2AD2FFA2215C73B000D1B4C6 /* VPSocketEngine+EngineWebsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VPSocketEngine+EngineWebsocket.h"; sourceTree = "<group>"; };
 		F01011541F7BCC2700699669 /* JFRSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFRSecurity.m; path = jetfire/JFRSecurity.m; sourceTree = SOURCE_ROOT; };
 		F01011551F7BCC2700699669 /* JFRSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFRSecurity.h; path = jetfire/JFRSecurity.h; sourceTree = SOURCE_ROOT; };
 		F01011561F7BCC2700699669 /* JFRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFRWebSocket.m; path = jetfire/JFRWebSocket.m; sourceTree = SOURCE_ROOT; };
 		F01011571F7BCC2700699669 /* JFRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFRWebSocket.h; path = jetfire/JFRWebSocket.h; sourceTree = SOURCE_ROOT; };
-		F035C7541F75C71B00174C98 /* NSString+VPSocketIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+VPSocketIO.h"; path = "Source/NSString+VPSocketIO.h"; sourceTree = "<group>"; };
-		F035C7551F75C71B00174C98 /* NSString+VPSocketIO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+VPSocketIO.m"; path = "Source/NSString+VPSocketIO.m"; sourceTree = "<group>"; };
-		F035C7581F76635000174C98 /* VPStringReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VPStringReader.h; path = Source/VPStringReader.h; sourceTree = "<group>"; };
-		F035C7591F76635000174C98 /* VPStringReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VPStringReader.m; path = Source/VPStringReader.m; sourceTree = "<group>"; };
-		F035C75C1F76898400174C98 /* DefaultSocketLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DefaultSocketLogger.h; path = Source/DefaultSocketLogger.h; sourceTree = "<group>"; };
-		F035C75D1F76898400174C98 /* DefaultSocketLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DefaultSocketLogger.m; path = Source/DefaultSocketLogger.m; sourceTree = "<group>"; };
-		F03E86261F7AA29000EF12B7 /* VPSocketEngine+EnginePollable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VPSocketEngine+EnginePollable.h"; path = "Source/VPSocketEngine+EnginePollable.h"; sourceTree = "<group>"; };
-		F03E86271F7AA29000EF12B7 /* VPSocketEngine+EnginePollable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "VPSocketEngine+EnginePollable.m"; path = "Source/VPSocketEngine+EnginePollable.m"; sourceTree = "<group>"; };
-		F03E86291F7AA2F100EF12B7 /* VPSocketEngine+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VPSocketEngine+Private.h"; path = "Source/VPSocketEngine+Private.h"; sourceTree = "<group>"; };
-		F05AF09C1F717B1000DC58C7 /* VPSocketIOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPSocketIOClient.h; path = Source/VPSocketIOClient.h; sourceTree = "<group>"; };
-		F05AF09D1F717B1000DC58C7 /* VPSocketIOClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPSocketIOClient.m; path = Source/VPSocketIOClient.m; sourceTree = "<group>"; };
 		F06B192D1F71466C003E81B1 /* VPSocketIOApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPSocketIOApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06B19311F71466D003E81B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F06B19331F71466D003E81B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,29 +129,9 @@
 		F06B193C1F71466D003E81B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F06B193F1F71466D003E81B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F06B19411F71466D003E81B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F07857AF1F7198BD00B97C77 /* VPSocketAnyEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPSocketAnyEvent.h; path = Source/VPSocketAnyEvent.h; sourceTree = "<group>"; };
-		F07857B01F7198BD00B97C77 /* VPSocketAnyEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPSocketAnyEvent.m; path = Source/VPSocketAnyEvent.m; sourceTree = "<group>"; };
-		F07857B81F71AA1C00B97C77 /* VPSocketAckEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPSocketAckEmitter.h; path = Source/VPSocketAckEmitter.h; sourceTree = "<group>"; };
-		F07857B91F71AA1C00B97C77 /* VPSocketAckEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPSocketAckEmitter.m; path = Source/VPSocketAckEmitter.m; sourceTree = "<group>"; };
-		F07857BC1F71B05000B97C77 /* VPSocketEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPSocketEngine.h; path = Source/VPSocketEngine.h; sourceTree = "<group>"; };
-		F07857BD1F71B05000B97C77 /* VPSocketEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPSocketEngine.m; path = Source/VPSocketEngine.m; sourceTree = "<group>"; };
-		F07857BF1F71B07900B97C77 /* VPSocketEngineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPSocketEngineProtocol.h; path = Source/VPSocketEngineProtocol.h; sourceTree = "<group>"; };
-		F07857C61F71B85500B97C77 /* VPSocketIOClientProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPSocketIOClientProtocol.h; path = Source/VPSocketIOClientProtocol.h; sourceTree = "<group>"; };
-		F07857C91F71BA1600B97C77 /* VPSocketPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPSocketPacket.h; path = Source/VPSocketPacket.h; sourceTree = "<group>"; };
-		F07857CA1F71BA1600B97C77 /* VPSocketPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPSocketPacket.m; path = Source/VPSocketPacket.m; sourceTree = "<group>"; };
-		F07857CC1F71D06F00B97C77 /* VPSocketAckManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPSocketAckManager.h; path = Source/VPSocketAckManager.h; sourceTree = "<group>"; };
-		F07857CD1F71D06F00B97C77 /* VPSocketAckManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPSocketAckManager.m; path = Source/VPSocketAckManager.m; sourceTree = "<group>"; };
-		F08E4F5F1F7AAB370032C8E3 /* VPSocketEngine+EngineWebsocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VPSocketEngine+EngineWebsocket.h"; path = "Source/VPSocketEngine+EngineWebsocket.h"; sourceTree = "<group>"; };
-		F08E4F601F7AAB370032C8E3 /* VPSocketEngine+EngineWebsocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "VPSocketEngine+EngineWebsocket.m"; path = "Source/VPSocketEngine+EngineWebsocket.m"; sourceTree = "<group>"; };
-		F08E4F621F7AB21E0032C8E3 /* VPSocketOnAckCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VPSocketOnAckCallback.h; path = Source/VPSocketOnAckCallback.h; sourceTree = "<group>"; };
-		F08E4F631F7AB21E0032C8E3 /* VPSocketOnAckCallback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VPSocketOnAckCallback.m; path = Source/VPSocketOnAckCallback.m; sourceTree = "<group>"; };
-		F08E4F651F7AB3850032C8E3 /* VPSocketAck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VPSocketAck.h; path = Source/VPSocketAck.h; sourceTree = "<group>"; };
-		F08E4F661F7AB3850032C8E3 /* VPSocketAck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VPSocketAck.m; path = Source/VPSocketAck.m; sourceTree = "<group>"; };
 		F08E4F6E1F7ACFEB0032C8E3 /* VPSocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VPSocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08E4F701F7ACFEB0032C8E3 /* VPSocketIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VPSocketIO.h; path = ../Source/VPSocketIO.h; sourceTree = "<group>"; };
 		F08E4F711F7ACFEB0032C8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F08E4F7B1F7AD1030032C8E3 /* VPSocketLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VPSocketLogger.h; path = Source/VPSocketLogger.h; sourceTree = "<group>"; };
-		F08E4F7C1F7AD1030032C8E3 /* VPSocketLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VPSocketLogger.m; path = Source/VPSocketLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AD2FF7B215C73B000D1B4C6 /* Ack */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2FF7C215C73B000D1B4C6 /* VPSocketOnAckCallback.h */,
+				2AD2FF7D215C73B000D1B4C6 /* VPSocketAck.h */,
+				2AD2FF7E215C73B000D1B4C6 /* VPSocketAckManager.m */,
+				2AD2FF7F215C73B000D1B4C6 /* VPSocketAckEmitter.m */,
+				2AD2FF80215C73B000D1B4C6 /* VPSocketAck.m */,
+				2AD2FF81215C73B000D1B4C6 /* VPSocketOnAckCallback.m */,
+				2AD2FF82215C73B000D1B4C6 /* VPSocketAckManager.h */,
+				2AD2FF83215C73B000D1B4C6 /* VPSocketAckEmitter.h */,
+			);
+			name = Ack;
+			path = Source/Ack;
+			sourceTree = "<group>";
+		};
+		2AD2FF84215C73B000D1B4C6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2FF85215C73B000D1B4C6 /* NSString+VPSocketIO.h */,
+				2AD2FF86215C73B000D1B4C6 /* VPSocketLogger.h */,
+				2AD2FF87215C73B000D1B4C6 /* DefaultSocketLogger.m */,
+				2AD2FF88215C73B000D1B4C6 /* VPStringReader.h */,
+				2AD2FF89215C73B000D1B4C6 /* VPSocketLogger.m */,
+				2AD2FF8A215C73B000D1B4C6 /* NSString+VPSocketIO.m */,
+				2AD2FF8B215C73B000D1B4C6 /* VPStringReader.m */,
+				2AD2FF8C215C73B000D1B4C6 /* DefaultSocketLogger.h */,
+			);
+			name = Util;
+			path = Source/Util;
+			sourceTree = "<group>";
+		};
+		2AD2FF8D215C73B000D1B4C6 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2FF8E215C73B000D1B4C6 /* VPSocketPacket.h */,
+				2AD2FF8F215C73B000D1B4C6 /* VPSocketPacket.m */,
+			);
+			name = Parse;
+			path = Source/Parse;
+			sourceTree = "<group>";
+		};
+		2AD2FF90215C73B000D1B4C6 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2FF91215C73B000D1B4C6 /* VPSocketIOClientProtocol.h */,
+				2AD2FF92215C73B000D1B4C6 /* VPSocketIOClient.h */,
+				2AD2FF93215C73B000D1B4C6 /* VPSocketAnyEvent.h */,
+				2AD2FF94215C73B000D1B4C6 /* VPSocketIOClient.m */,
+				2AD2FF95215C73B000D1B4C6 /* VPSocketAnyEvent.m */,
+			);
+			name = Client;
+			path = Source/Client;
+			sourceTree = "<group>";
+		};
+		2AD2FF96215C73B000D1B4C6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2FF97215C73B000D1B4C6 /* VPSocketManager.h */,
+				2AD2FF98215C73B000D1B4C6 /* VPSocketManagerProtocol.h */,
+				2AD2FF99215C73B000D1B4C6 /* VPSocketManager.m */,
+			);
+			name = Manager;
+			path = Source/Manager;
+			sourceTree = "<group>";
+		};
+		2AD2FF9A215C73B000D1B4C6 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				2AD2FF9B215C73B000D1B4C6 /* VPSocketEngine.m */,
+				2AD2FF9C215C73B000D1B4C6 /* VPSocketEngineProtocol.h */,
+				2AD2FF9D215C73B000D1B4C6 /* VPSocketEngine+EnginePollable.h */,
+				2AD2FF9E215C73B000D1B4C6 /* VPSocketEngine+EngineWebsocket.m */,
+				2AD2FF9F215C73B000D1B4C6 /* VPSocketEngine.h */,
+				2AD2FFA0215C73B000D1B4C6 /* VPSocketEngine+Private.h */,
+				2AD2FFA1215C73B000D1B4C6 /* VPSocketEngine+EnginePollable.m */,
+				2AD2FFA2215C73B000D1B4C6 /* VPSocketEngine+EngineWebsocket.h */,
+			);
+			name = Engine;
+			path = Source/Engine;
+			sourceTree = "<group>";
+		};
 		F01011531F7BCC0B00699669 /* Jetfire */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,25 +250,14 @@
 		F05AF09A1F71746000DC58C7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F07857C21F71B67100B97C77 /* Parse */,
-				F07857BB1F71B03400B97C77 /* Engine */,
-				F07857B71F71AA0600B97C77 /* Ack */,
-				F07857B31F71A8D300B97C77 /* Utils */,
-				F05AF09B1F717A1C00DC58C7 /* Client */,
+				2AD2FF7B215C73B000D1B4C6 /* Ack */,
+				2AD2FF90215C73B000D1B4C6 /* Client */,
+				2AD2FF9A215C73B000D1B4C6 /* Engine */,
+				2AD2FF96215C73B000D1B4C6 /* Manager */,
+				2AD2FF8D215C73B000D1B4C6 /* Parse */,
+				2AD2FF84215C73B000D1B4C6 /* Util */,
 			);
 			name = Source;
-			sourceTree = "<group>";
-		};
-		F05AF09B1F717A1C00DC58C7 /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				F05AF09C1F717B1000DC58C7 /* VPSocketIOClient.h */,
-				F05AF09D1F717B1000DC58C7 /* VPSocketIOClient.m */,
-				F07857AF1F7198BD00B97C77 /* VPSocketAnyEvent.h */,
-				F07857B01F7198BD00B97C77 /* VPSocketAnyEvent.m */,
-				F07857C61F71B85500B97C77 /* VPSocketIOClientProtocol.h */,
-			);
-			name = Client;
 			sourceTree = "<group>";
 		};
 		F06B19241F71466C003E81B1 = {
@@ -227,60 +304,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F07857B31F71A8D300B97C77 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				F035C7541F75C71B00174C98 /* NSString+VPSocketIO.h */,
-				F035C7551F75C71B00174C98 /* NSString+VPSocketIO.m */,
-				F035C7581F76635000174C98 /* VPStringReader.h */,
-				F035C7591F76635000174C98 /* VPStringReader.m */,
-				F035C75C1F76898400174C98 /* DefaultSocketLogger.h */,
-				F035C75D1F76898400174C98 /* DefaultSocketLogger.m */,
-				F08E4F7B1F7AD1030032C8E3 /* VPSocketLogger.h */,
-				F08E4F7C1F7AD1030032C8E3 /* VPSocketLogger.m */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
-		F07857B71F71AA0600B97C77 /* Ack */ = {
-			isa = PBXGroup;
-			children = (
-				F07857B81F71AA1C00B97C77 /* VPSocketAckEmitter.h */,
-				F07857B91F71AA1C00B97C77 /* VPSocketAckEmitter.m */,
-				F07857CC1F71D06F00B97C77 /* VPSocketAckManager.h */,
-				F07857CD1F71D06F00B97C77 /* VPSocketAckManager.m */,
-				F08E4F621F7AB21E0032C8E3 /* VPSocketOnAckCallback.h */,
-				F08E4F631F7AB21E0032C8E3 /* VPSocketOnAckCallback.m */,
-				F08E4F651F7AB3850032C8E3 /* VPSocketAck.h */,
-				F08E4F661F7AB3850032C8E3 /* VPSocketAck.m */,
-			);
-			name = Ack;
-			sourceTree = "<group>";
-		};
-		F07857BB1F71B03400B97C77 /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				F07857BC1F71B05000B97C77 /* VPSocketEngine.h */,
-				F07857BD1F71B05000B97C77 /* VPSocketEngine.m */,
-				F07857BF1F71B07900B97C77 /* VPSocketEngineProtocol.h */,
-				F03E86261F7AA29000EF12B7 /* VPSocketEngine+EnginePollable.h */,
-				F03E86271F7AA29000EF12B7 /* VPSocketEngine+EnginePollable.m */,
-				F03E86291F7AA2F100EF12B7 /* VPSocketEngine+Private.h */,
-				F08E4F5F1F7AAB370032C8E3 /* VPSocketEngine+EngineWebsocket.h */,
-				F08E4F601F7AAB370032C8E3 /* VPSocketEngine+EngineWebsocket.m */,
-			);
-			name = Engine;
-			sourceTree = "<group>";
-		};
-		F07857C21F71B67100B97C77 /* Parse */ = {
-			isa = PBXGroup;
-			children = (
-				F07857C91F71BA1600B97C77 /* VPSocketPacket.h */,
-				F07857CA1F71BA1600B97C77 /* VPSocketPacket.m */,
-			);
-			name = Parse;
-			sourceTree = "<group>";
-		};
 		F08E4F6F1F7ACFEB0032C8E3 /* VPSocketIO-iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,25 +321,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				F08E4F721F7ACFEB0032C8E3 /* VPSocketIO.h in Headers */,
-				F08E4F8D1F7AD60F0032C8E3 /* VPSocketLogger.h in Headers */,
-				F08E4F8E1F7AD60F0032C8E3 /* VPSocketIOClient.h in Headers */,
-				F08E4F8F1F7AD60F0032C8E3 /* VPSocketAnyEvent.h in Headers */,
-				F08E4F911F7AD67E0032C8E3 /* VPSocketOnAckCallback.h in Headers */,
-				F08E4F901F7AD60F0032C8E3 /* VPSocketIOClientProtocol.h in Headers */,
+				2AD2FFBA215C73B000D1B4C6 /* VPSocketManager.h in Headers */,
+				2AD2FFAC215C73B000D1B4C6 /* VPSocketLogger.h in Headers */,
+				2AD2FFB6215C73B000D1B4C6 /* VPSocketIOClient.h in Headers */,
+				2AD2FFBB215C73B000D1B4C6 /* VPSocketManagerProtocol.h in Headers */,
+				2AD2FFB5215C73B000D1B4C6 /* VPSocketIOClientProtocol.h in Headers */,
+				2AD2FFA3215C73B000D1B4C6 /* VPSocketOnAckCallback.h in Headers */,
+				2AD2FFB7215C73B000D1B4C6 /* VPSocketAnyEvent.h in Headers */,
+				2AD2FFB3215C73B000D1B4C6 /* VPSocketPacket.h in Headers */,
+				2AD2FFC1215C73B100D1B4C6 /* VPSocketEngine.h in Headers */,
+				2AD2FFA4215C73B000D1B4C6 /* VPSocketAck.h in Headers */,
+				2AD2FFC4215C73B100D1B4C6 /* VPSocketEngine+EngineWebsocket.h in Headers */,
+				2AD2FFB2215C73B000D1B4C6 /* DefaultSocketLogger.h in Headers */,
+				2AD2FFAE215C73B000D1B4C6 /* VPStringReader.h in Headers */,
+				2AD2FFC2215C73B100D1B4C6 /* VPSocketEngine+Private.h in Headers */,
+				2AD2FFAB215C73B000D1B4C6 /* NSString+VPSocketIO.h in Headers */,
+				2AD2FFBF215C73B100D1B4C6 /* VPSocketEngine+EnginePollable.h in Headers */,
+				2AD2FFA9215C73B000D1B4C6 /* VPSocketAckManager.h in Headers */,
+				2AD2FFAA215C73B000D1B4C6 /* VPSocketAckEmitter.h in Headers */,
+				2AD2FFBE215C73B100D1B4C6 /* VPSocketEngineProtocol.h in Headers */,
 				F010115C1F7BCCD700699669 /* JFRSecurity.h in Headers */,
 				F010115D1F7BCCD700699669 /* JFRWebSocket.h in Headers */,
-				F010115E1F7BCCE000699669 /* VPSocketPacket.h in Headers */,
-				F010115F1F7BCCE000699669 /* VPSocketEngine.h in Headers */,
-				F01011601F7BCCE000699669 /* VPSocketEngineProtocol.h in Headers */,
-				F01011611F7BCCE000699669 /* VPSocketEngine+EnginePollable.h in Headers */,
-				F01011621F7BCCE000699669 /* VPSocketEngine+Private.h in Headers */,
-				F01011631F7BCCE000699669 /* VPSocketEngine+EngineWebsocket.h in Headers */,
-				F01011641F7BCCED00699669 /* VPSocketAckEmitter.h in Headers */,
-				F01011651F7BCCED00699669 /* VPSocketAckManager.h in Headers */,
-				F01011671F7BCCFA00699669 /* NSString+VPSocketIO.h in Headers */,
-				F01011681F7BCCFA00699669 /* VPStringReader.h in Headers */,
-				F01011691F7BCCFA00699669 /* DefaultSocketLogger.h in Headers */,
-				F01011661F7BCCED00699669 /* VPSocketAck.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,22 +460,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD2FFC3215C73B100D1B4C6 /* VPSocketEngine+EnginePollable.m in Sources */,
+				2AD2FFC0215C73B100D1B4C6 /* VPSocketEngine+EngineWebsocket.m in Sources */,
+				2AD2FFBC215C73B000D1B4C6 /* VPSocketManager.m in Sources */,
+				2AD2FFA5215C73B000D1B4C6 /* VPSocketAckManager.m in Sources */,
+				2AD2FFB1215C73B000D1B4C6 /* VPStringReader.m in Sources */,
 				F010115A1F7BCCCC00699669 /* JFRSecurity.m in Sources */,
+				2AD2FFAF215C73B000D1B4C6 /* VPSocketLogger.m in Sources */,
+				2AD2FFA8215C73B000D1B4C6 /* VPSocketOnAckCallback.m in Sources */,
+				2AD2FFBD215C73B100D1B4C6 /* VPSocketEngine.m in Sources */,
 				F010115B1F7BCCCC00699669 /* JFRWebSocket.m in Sources */,
-				F08E4F861F7AD2630032C8E3 /* NSString+VPSocketIO.m in Sources */,
-				F08E4F871F7AD2630032C8E3 /* VPStringReader.m in Sources */,
-				F08E4F881F7AD2630032C8E3 /* DefaultSocketLogger.m in Sources */,
-				F08E4F891F7AD2630032C8E3 /* VPSocketLogger.m in Sources */,
-				F08E4F8A1F7AD2630032C8E3 /* VPSocketIOClient.m in Sources */,
-				F08E4F8B1F7AD2630032C8E3 /* VPSocketAnyEvent.m in Sources */,
-				F08E4F851F7AD2570032C8E3 /* VPSocketOnAckCallback.m in Sources */,
-				F08E4F841F7AD24E0032C8E3 /* VPSocketAck.m in Sources */,
-				F08E4F7E1F7AD2480032C8E3 /* VPSocketPacket.m in Sources */,
-				F08E4F7F1F7AD2480032C8E3 /* VPSocketEngine.m in Sources */,
-				F08E4F801F7AD2480032C8E3 /* VPSocketEngine+EnginePollable.m in Sources */,
-				F08E4F811F7AD2480032C8E3 /* VPSocketEngine+EngineWebsocket.m in Sources */,
-				F08E4F821F7AD2480032C8E3 /* VPSocketAckEmitter.m in Sources */,
-				F08E4F831F7AD2480032C8E3 /* VPSocketAckManager.m in Sources */,
+				2AD2FFB0215C73B000D1B4C6 /* NSString+VPSocketIO.m in Sources */,
+				2AD2FFAD215C73B000D1B4C6 /* DefaultSocketLogger.m in Sources */,
+				2AD2FFA7215C73B000D1B4C6 /* VPSocketAck.m in Sources */,
+				2AD2FFB4215C73B000D1B4C6 /* VPSocketPacket.m in Sources */,
+				2AD2FFA6215C73B000D1B4C6 /* VPSocketAckEmitter.m in Sources */,
+				2AD2FFB9215C73B000D1B4C6 /* VPSocketAnyEvent.m in Sources */,
+				2AD2FFB8215C73B000D1B4C6 /* VPSocketIOClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

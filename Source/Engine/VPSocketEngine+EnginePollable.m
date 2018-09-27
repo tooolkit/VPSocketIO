@@ -90,7 +90,7 @@ typedef void (^EngineURLSessionDataTaskCallBack)(NSData* data, NSURLResponse*res
 
 - (void)parsePollingMessage:(NSString *)string {
     
-    if(string.length > 0) {
+    if(string.length != 1) {
         
         [DefaultSocketLogger.logger log:[NSString stringWithFormat:@"Got poll message:%@", string] type:@"SocketEnginePolling"];
         

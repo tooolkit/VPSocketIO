@@ -20,4 +20,4 @@ FOUNDATION_EXPORT const unsigned char VPSocketIOVersionString[];
 #import <VPSocketIO/VPSocketOnAckCallback.h>
 #import <VPSocketIO/VPSocketIOClientProtocol.h>
 #import <VPSocketIO/VPSocketLogger.h>
-
+#import <VPSocketIO/VPSocketManager.h>

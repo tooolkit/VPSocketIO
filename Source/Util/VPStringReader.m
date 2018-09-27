@@ -20,7 +20,7 @@
 }
 
 -(BOOL)hasNext {
-    return _currentIndex < _message.length -1;
+    return _currentIndex <= _message.length - 1;
 }
 
 -(NSString*)currentCharacter {
@@ -66,7 +66,7 @@
 -(NSString*)readUntilEnd
 {
     NSString *resultString =[_message substringFromIndex:_currentIndex];
-    _currentIndex = (int)_message.length - 1;
+    _currentIndex = (int)_message.length;
     return resultString;
 }
 

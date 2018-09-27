@@ -1,17 +1,14 @@
 //
 //  VPSocketEngineProtocol.h
-//  VPSocketIO
+//  IFMSocketIO
 //
-//  Created by Vasily Popov on 9/19/17.
-//  Copyright © 2017 Vasily Popov. All rights reserved.
+//  Created by yangguang on 2018/7/23.
+//  Copyright © 2018年 bngj. All rights reserved.
 //
-
-#ifndef VPSocketEngineProtocol_H
-#define VPSocketEngineProtocol_H
 
 #import <Foundation/Foundation.h>
 
-@protocol VPSocketEngineClient <NSObject>
+@protocol VPSocketEngineClient<NSObject>
 
 @required
 
@@ -26,13 +23,14 @@
 /// Called when the engine receives binary data.
 -(void)parseEngineBinaryData:(NSData*)data;
 
+-(void)engineDidReceivePong;
+-(void)engineDidSendPing;
+
 @end
 
-
-@protocol VPSocketEngineProtocol <NSObject>
+@protocol VPSocketEngineProtocol<NSObject>
 
 @required
-
 @property (nonatomic, weak) id<VPSocketEngineClient> client;
 @property (nonatomic, readonly) BOOL closed;
 @property (nonatomic, readonly) BOOL connected;
@@ -47,6 +45,3 @@
 -(void)send:(NSString*)msg withData:(NSArray<NSData*>*) data;
 
 @end
-
-#endif
-

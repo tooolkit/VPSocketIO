@@ -17,4 +17,7 @@
 - (void) disconnectPolling;
 
 - (void)sendPollMessage:(NSString *)message withType:(VPSocketEnginePacketType)type withData:(NSArray *)array;
+
+// for test ?
+- (void)parsePollingMessage:(NSString *)string;
 @end
