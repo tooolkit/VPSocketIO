@@ -3,7 +3,7 @@
 //  IFMSocketIO
 //
 //  Created by yangguang on 2018/7/23.
-//  Copyright © 2018年 bngj. All rights reserved.
+//  Copyright © 2018年 tooolkit. All rights reserved.
 //
 
 #import "VPSocketLogger.h"
