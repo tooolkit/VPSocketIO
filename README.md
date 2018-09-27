@@ -8,14 +8,16 @@ It uses Jetfire [Jetfire](https://github.com/acmacalister/jetfire)
 ## Objective-C Example
 ```objective-c
 #import <SocketIO-iOS/SocketIO-iOS.h>;
-NSURL* url = [[NSURL alloc] initWithString:@"http://localhost:8080"];
-SocketIOClient* socket = [[SocketIOClient alloc] initWithSocketURL:url config:@{@"log": @YES];
-
-[socket on:@"connect" callback:^(NSArray* data, SocketAckEmitter* ack) {
-    NSLog(@"socket connected");
+NSString *urlString = @"http://localhost:8080";
+NSURL *url = [[NSURL alloc]initWithString:urlString];
+self.manager = [[VPSocketManager alloc]initWithURL:url config:@{@"log":@(NO)}];
+//    self.socket = [self.manager defaultSocket];
+self.socket = [self.manager socketFor:@"/web"];
+[self.socket on:@"connect" callback:^(NSArray *array, VPSocketAckEmitter *emitter) {
+NSLog(@"%@",array);
 }];
+[self.socket connect];
 
-[socket connect];
 
 ```
 
