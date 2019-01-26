@@ -651,7 +651,7 @@
         [self closeOutEngine:@"Disconnect"];
         return;
     }
-    if (!_polling) {
+    if (_polling) {
         [self flushProbeWait];
         return;
     }
@@ -662,8 +662,11 @@
     if(error.localizedDescription.length > 0)
     {
         reason = error.localizedDescription;
+        [self didError:reason];
+    }else{
+        [self closeOutEngine:reason];
     }
-    [self closeOutEngine:reason];
+    
 }
 
 - (void)websocket:(JFRWebSocket *)socket didReceiveMessage:(NSString *)string {
